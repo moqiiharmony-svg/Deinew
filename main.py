@@ -549,7 +549,7 @@ async def profile_create(
     data = dict(slots.get(slot, {}))
     if name:
         data["name"] = name
-    err = await build_avatar_fields(interaction, key, data, avatar, avatar_url)
+     err = await build_avatar_fields(interaction, key, data, avatar, avatar_url)
     if err:
         await interaction.followup.send(err, ephemeral=True)
         return
